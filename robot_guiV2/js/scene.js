@@ -61,10 +61,8 @@ window.addEventListener('resize', onWindowResize );
 
 render();
 
-
 function render() {
-
-renderer.render(scene, camera );
+    renderer.render(scene, camera );
 
 }
 
@@ -90,6 +88,9 @@ function animate() {
         console.log("resize");
     }
     clientWidth_last = container.clientWidth;
+
+    let angles = [1,1,1,1,1,1,1];
+    modelLoader.setJointAngles(angles);
 }
 animate();
 

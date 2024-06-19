@@ -29,10 +29,16 @@ class ModelLoader {
 
             this.onLoad(scene);
 
-            console.log("tesxt2", this.robot);
             return this.robot;
 
         });
+    }
+
+    setJointAngles(angles) {
+        for (let i = 0; i < angles.length; i++) {
+            if(this.robot)
+                this.robot.setJointValue( `maira7M_joint${i + 1}`, angles[i]);
+        }
     }
   
   }

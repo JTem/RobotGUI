@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/sidebar.css">
+    <link rel="stylesheet" type="text/css" href="css/menu.css">
+</head>
+<body>
+    <div id = "grid">
+        <div class="header"></div>
+
+        <div class="sidebar"></div>
+        <div class="menu"></div>
+
+        <div id="scene-canvas" class="main" ></div>
+    
+    </div>
+
+    <!-- Add this before your script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+        $(function() {
+            $(".header").load("partials/header.html");
+            $(".sidebar").load("partials/sidebar.html");
+            $(".menu").load("partials/menu.html");
+    
+        });
+    </script>
+
+    <script type="module" src="js/scene.js"></script>
+    <script type="module" src="js/main.js"></script>
+    <!-- <script type="module" src="js/header_scrollbar.js"></script> -->
+</body>
+</html>

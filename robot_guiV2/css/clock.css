@@ -1,0 +1,15 @@
+.clock-container { 
+    position: relative;
+    margin-right: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+#clock {
+    font-size: 1.5em;
+    font-family: monospace;
+    color: #fff;
+    user-select: none;
+}

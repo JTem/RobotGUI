@@ -1,0 +1,96 @@
+
+<head>
+    <link rel="stylesheet" type="text/css" href="../css/sim_real_toggle.css">
+    <link rel="stylesheet" type="text/css" href="../css/on_off_toggle.css">
+    <link rel="stylesheet" type="text/css" href="../css/clock.css">
+</head>
+<body class="header">
+
+    <div class="scrollable-tabs-container">
+        <div class="left-arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+            </svg>
+        </div>
+
+        <ul>
+            <li>
+                <a href="#" id="home" class="active">Home</a>
+            </li>
+
+            <li>
+                <a href="#" id="jogging">Jogging</a>
+            </li>
+
+            <li>
+                <a href="#" id="zero_g">ZeroG</a>
+            </li>
+
+            <li>
+                <a href="#" id="motion">Motion</a>
+            </li>
+            
+            <li>
+                <a href="#" id="force_torque">Force Torque</a>
+            </li>
+
+            <li>
+                <a href="#" id="points">Points</a>
+            </li>
+
+            <li>
+                <a href="#" id="robot_data">Robot Data</a>
+            </li>
+
+            <li>
+                <a href="#" id="settings">Settings</a>
+            </li>
+
+            <li>
+                <a href="#" id="tools">Tools</a>
+            </li>
+
+            <li>
+                <a href="#" id="ai">AI</a>
+            </li>
+
+            <li>
+                <a href="#" id="safety">Safety</a>
+            </li>
+            
+            <li>
+                <a href="#" id="diagnostics">Diagnostics</a>
+            </li>
+
+        </ul>
+
+        <div class="right-arrow active">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+              </svg>              
+        </div>
+    </div>
+    
+    <div class="sim-real-switch">
+        <input type="checkbox" id="switcher">
+        <label for="switcher"></label>
+    </div>
+
+    <div class="clock-container">
+        <div id = "clock">00:00:00</div>
+    </div>
+
+    <div class="on-off-container">
+        <p>Power</p>
+        <input type="checkbox" id="toggle">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+            <path fill-rule="evenodd" d="M8 1a.75.75 0 0 1 .75.75v6.5a.75.75 0 0 1-1.5 0v-6.5A.75.75 0 0 1 8 1ZM4.11 3.05a.75.75 0 0 1 0 1.06 5.5 5.5 0 1 0 7.78 0 .75.75 0 0 1 1.06-1.06 7 7 0 1 1-9.9 0 .75.75 0 0 1 1.06 0Z" clip-rule="evenodd" />
+          </svg>
+          
+        <label for="toggle"></label>
+    </div>
+    
+
+    <script type="module" src="../js/header_scrollbar.js"></script>
+    <script type="module" src="../js/clock.js"></script>
+</body>

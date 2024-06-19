@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+
+}
+
+#grid {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 60px 700px 1fr;
+    grid-template-rows: 70px 1fr;
+    transition: 500ms;
+}
+
+.main{
+    
+    grid-column: 3/4;
+    grid-row: 2/3;
+    overflow: hidden;
+}
